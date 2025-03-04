@@ -1,6 +1,6 @@
 # Facial-Recognition
 
-A personal facial recognition application built with **Flask** and **TensorFlow** that determines if two faces belong to the same person. The system uses a **Siamese Neural Network** trained exclusively on my own face!
+A personal facial recognition application built with **Python**, **TensorFlow**, and **Flask** that determines if two faces belong to the same person. The system uses a **Siamese Neural Network** trained exclusively on my own face!
 
 ## Features
 
@@ -8,7 +8,6 @@ A personal facial recognition application built with **Flask** and **TensorFlow*
 - **Siamese Neural Network**: Deep learning model that measures facial similarity
 - **Web Interface**: User-friendly application for comparing faces
 - **Real-time Analysis**: Process images from uploads or webcam
-- **Privacy-Focused**: Consent required, no images stored permanently
 
 <h2>Demo</h2>
 
@@ -31,8 +30,9 @@ A personal facial recognition application built with **Flask** and **TensorFlow*
 │   │   └── js/  
 │   │       └── script.js    # Frontend JavaScript code  
 │   └── templates/  
-│       └── index.html       # Web interface template  
-├── train_model.ipynb        # Model training notebook  
+│       └── index.html       # Web interface template
+├── training notebook/   
+│   ├── train_model.ipynb    # Model training notebook  
 └── siamese_model_final.h5   # Final model weights
 ```
 

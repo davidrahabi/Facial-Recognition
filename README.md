@@ -31,8 +31,6 @@ A personal facial recognition application built with **Python**, **TensorFlow**,
 │   │       └── script.js    # Frontend JavaScript code  
 │   └── templates/  
 │       └── index.html       # Web interface template
-├── training notebook/   
-│   ├── train_model.ipynb    # Model training notebook  
 └── siamese_model_final.h5   # Final model weights
 ```
 

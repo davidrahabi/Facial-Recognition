@@ -106,7 +106,7 @@ python app.py
 
 ## Requirements
 
-- **TensorFlow 2.x**
+- **TensorFlow 2.12**
 - **Flask**
 - **OpenCV**
 - **NumPy**

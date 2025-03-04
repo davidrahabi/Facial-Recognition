@@ -10,9 +10,12 @@ A personal facial recognition application built with **Flask** and **TensorFlow*
 - **Real-time Analysis**: Process images from uploads or webcam
 - **Privacy-Focused**: Consent required, no images stored permanently
 
-## Demo
-![](images/image1.png)
-![](images/image2.png)
+<h2>Demo</h2>
+
+<p align="center">
+  <img src="images/image1.jpg" alt="Image 1" width="300">
+  <img src="images/image2.jpg" alt="Image 2" width="300">
+</p>
 
 ## Project Structure
 ```

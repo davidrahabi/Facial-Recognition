@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Comparison</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1 class="app-title">Face Verification System</h1>
+            <p class="app-subtitle">Upload or capture images to compare facial similarity</p>
+        </div>
+
+        <div id="consentModal" class="modal">
+            <div class="modal-content">
+                <h2 class="modal-title">Privacy Policy and Consent</h2>
+                <div class="modal-body">
+                    <p>Before using this face verification service, please read and accept:</p>
+                    <ul>
+                        <li>Images are processed for face verification only</li>
+                        <li>No images are stored permanently</li>
+                        <li>Processing is done securely via HTTPS</li>
+                        <li>You must be 18 or older to use this service</li>
+                    </ul>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="ageVerification"> I confirm I am 18 or older
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="consentCheckbox"> I accept the privacy policy
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-accept" onclick="acceptConsent()">Accept and Continue</button>
+            </div>
+        </div>
+        
+        <div class="image-inputs">
+            <div class="image-section">
+                <h3 class="section-title">Image 1</h3>
+                <video id="webcam1" class="webcam" autoplay style="display: none;"></video>
+                <canvas id="canvas1" class="preview"></canvas>
+                
+                <input type="file" id="file1" class="input-file" accept="image/*">
+                <label for="file1"><i class="fas fa-upload"></i> Choose File</label>
+                
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="startCamera(1)">
+                        <i class="fas fa-camera"></i> Camera
+                    </button>
+                    <button class="btn btn-primary" onclick="captureImage(1)">
+                        <i class="fas fa-camera-retro"></i> Capture
+                    </button>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <h3 class="section-title">Image 2</h3>
+                <video id="webcam2" class="webcam" autoplay style="display: none;"></video>
+                <canvas id="canvas2" class="preview"></canvas>
+                
+                <input type="file" id="file2" class="input-file" accept="image/*">
+                <label for="file2"><i class="fas fa-upload"></i> Choose File</label>
+                
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="startCamera(2)">
+                        <i class="fas fa-camera"></i> Camera
+                    </button>
+                    <button class="btn btn-primary" onclick="captureImage(2)">
+                        <i class="fas fa-camera-retro"></i> Capture
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-compare" onclick="compareImages()">
+            <i class="fas fa-search"></i> Compare Faces
+        </button>
+        
+        <div id="loading" style="display: none;">
+            <p>Detecting and Analyzing Faces...</p>
+            <div class="loader"></div>
+        </div>
+        
+        <div id="result" class="result-neutral">Results will appear here</div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

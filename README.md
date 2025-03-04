@@ -19,19 +19,21 @@ A personal facial recognition application built with **Flask** and **TensorFlow*
 
 ## Project Structure
 ```
-├── app.py                   # Flask web application
-├── model.py                 # Siamese model architecture
-├── layers.py                # Custom L1 distance layer
-├── preprocess.py            # Face detection and image preprocessing
-├── augment_images.py        # Data augmentation for training
-├── train_model.ipynb        # Model training notebook
-├── static/                  # Static web assets
-│   ├── css/
-│   │   └── styles.css       # Application styling
-│   └── js/
-│       └── script.js        # Frontend JavaScript code
-└── templates/
-    └── index.html           # Web interface template
+├── flaskapp/                # Flask application folder  
+│   ├── app.py               # Flask web application  
+│   ├── model.py             # Siamese model architecture  
+│   ├── layers.py            # Custom L1 distance layer  
+│   ├── preprocess.py        # Face detection and image preprocessing  
+│   ├── augment_images.py    # Data augmentation for training  
+│   ├── static/              # Static web assets  
+│   │   ├── css/  
+│   │   │   └── styles.css   # Application styling  
+│   │   └── js/  
+│   │       └── script.js    # Frontend JavaScript code  
+│   └── templates/  
+│       └── index.html       # Web interface template  
+├── train_model.ipynb        # Model training notebook  
+└── siamese_model_final.h5   # Final model weights
 ```
 
 ## Technical Details

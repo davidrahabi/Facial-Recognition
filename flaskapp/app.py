@@ -41,7 +41,7 @@ siamese_model.compile(
     optimizer=tf.keras.optimizers.Adam(1e-4),
     loss=tf.losses.BinaryCrossentropy()
 )
-siamese_model.load_weights('siamese_model_final.h5')
+siamese_model.load_weights('../siamese_model_final.h5')
 
 def preprocess(image_data):
     # Convert to tensor and preprocess

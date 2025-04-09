@@ -18,7 +18,7 @@ A personal facial recognition application built with **Python**, **TensorFlow**,
 
 ## Project Structure
 ```
-├── flaskapp/                # Flask application folder  
+├── Facial-Recognition/                
 │   ├── app.py               # Flask web application  
 │   ├── model.py             # Siamese model architecture  
 │   ├── layers.py            # Custom L1 distance layer  
@@ -29,9 +29,13 @@ A personal facial recognition application built with **Python**, **TensorFlow**,
 │   │   │   └── styles.css   # Application styling  
 │   │   └── js/  
 │   │       └── script.js    # Frontend JavaScript code  
-│   └── templates/  
-│       └── index.html       # Web interface template
-└── siamese_model_final.h5   # Final model weights
+│   ├── templates/  
+│   │     └── index.html       # Web interface template
+│   ├── training notebook/  
+│       └── train_model.ipynb # Documented training process from data preparation to evaluation.
+│   ├── siamese_model_final.h5   # Final model weights
+
+
 ```
 
 ## Technical Details
